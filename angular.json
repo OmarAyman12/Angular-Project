@@ -21,10 +21,16 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+<<<<<<< HEAD
               {
                 "glob": "**/*",
                 "input": "public"
               }
+=======
+              
+                "src/assets",
+                "src/favicon.ico"
+>>>>>>> omar
             ],
             "styles": [
               "src/styles.css"
