@@ -28,3 +28,7 @@
 .userBtn:hover{
     background-color: gray;
 }
+
+.active{
+    color: wheat;
+}

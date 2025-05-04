@@ -1,3 +1,16 @@
 <div>
   <h1>{{ name }}</h1>
+  <button type="button" (click)="onAddingTask()">Add Task</button>
+  @if(addingTask){
+    <app-new-task (cancel)="onCancelAddTask()" (add)="onAddTask($event)"/>
+  }
+  @else{
+     <ul>
+    @for(task of selectedUserTask; track task.id){
+    <li><app-task [task]="task" (complete)="onCompleteTask($event)" /></li>
+
+    }
+  </ul>
+  }
+ 
 </div>

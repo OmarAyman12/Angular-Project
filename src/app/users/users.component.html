@@ -1,5 +1,5 @@
 <div class="usersContainer">
-  <button (click)="onSelectUser()" class="userBtn">
+  <button [class.active]="selected" (click)="onSelectUser()" class="userBtn">
     <div class="userBtnContainer">
       <img [src]="imagePath()" [alt]="user.name" class="userImage" />
       <h1>
